@@ -1,6 +1,6 @@
 main: net.immortalcraft.factions.Factions
 name: Factions
-version: 2.1.6_dev
+version: 2.2.0_dev
 website: http://immortalcraftpvp.net/forums
 authors: [Cayorion, Brettflan, gamerfreak22222, Havoc1028]
 description: §bFactions is an anti-grief and guilding plugin that allows players to unite and fight. This build is custom to §6Immortal Craft§b. The Factions plugin is developed by the amazing §6Cayorion§b. Visit §6Cayorion§b at §6http://massivecraft.com§b or visit the Immortal Craft Forums at §6http://immortalcraftpvp.net/forums
@@ -15,6 +15,7 @@ permissions:
   factions.access.player: {description: grant player access, with the proper fperm, default: false}
   factions.access.view: {description: view access, default: false}
   factions.admin: {description: enable adminmode, default: false}
+  factions.announce: {description: broadcast a message to your faction, default: false}
   factions.autoclaim: {description: autoclaim when walking, default: false}
   factions.bishop: {description: promote a player to the rank bishop, default false}
   factions.bishop.any: {description: promote someone in any faction to the rank bishop, default false}
@@ -74,6 +75,7 @@ permissions:
       factions.access.player: true
       factions.access.view: true
       factions.admin: true
+      factions.announce: true
       factions.autoclaim: true
       factions.bishop: true
       factions.bishop.any: true
@@ -156,6 +158,7 @@ permissions:
       factions.access.faction: true
       factions.access.player: true
       factions.access.view: true
+      factions.announce: true
       factions.autoclaim: true
       factions.bishop: true
       factions.bishop.any: true

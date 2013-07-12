@@ -15,6 +15,7 @@ public enum Perm
 	ACCESS_PLAYER("access.player"),
 	ACCESS_FACTION("access.faction"),
 	ADMIN("admin"),
+        ANNOUNCE("announce"),
 	AUTOCLAIM("autoclaim"),
 	BISHOP("bishop"),
 	BISHOP_ANY("bishop.any"),

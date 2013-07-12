@@ -12,6 +12,7 @@ public class CmdFactions extends FCommand
 {
 	public CmdFactionsAccess cmdFactionsAccess = new CmdFactionsAccess();
 	public CmdFactionsLeader cmdFactionsLeader = new CmdFactionsLeader();
+        public CmdFactionsAnnounce cmdFactionsAnnounce = new CmdFactionsAnnounce();
 	public CmdFactionsAutoClaim cmdFactionsAutoClaim = new CmdFactionsAutoClaim();
 	public CmdFactionsAdmin cmdFactionsAdmin = new CmdFactionsAdmin();
 	public CmdFactionsClaim cmdFactionsClaim = new CmdFactionsClaim();
@@ -70,6 +71,7 @@ public class CmdFactions extends FCommand
 		this.addSubCommand(this.cmdFactionsSethome);
 		this.addSubCommand(this.cmdFactionsName);
 		this.addSubCommand(this.cmdFactionsDemote);
+                this.addSubCommand(this.cmdFactionsAnnounce);
 		this.addSubCommand(this.cmdFactionsDescription);
 		this.addSubCommand(this.cmdFactionsPerm);
 		this.addSubCommand(this.cmdFactionsFlag);
