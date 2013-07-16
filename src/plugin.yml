@@ -15,7 +15,7 @@ permissions:
   factions.access.player: {description: grant player access, with the proper fperm, default: false}
   factions.access.view: {description: view access, default: false}
   factions.admin: {description: enable adminmode, default: false}
-  factions.announce: {description: broadcast a message to your faction, default: false}
+  factions.announce: {description: sends an announcment to your Faction, default: false}
   factions.autoclaim: {description: autoclaim when walking, default: false}
   factions.bishop: {description: promote a player to the rank bishop, default false}
   factions.bishop.any: {description: promote someone in any faction to the rank bishop, default false}

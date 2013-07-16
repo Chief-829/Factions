@@ -31,6 +31,7 @@ public enum FPerm
 	LEVER(true, "lever", "use levers",                   Rel.LEADER, Rel.BISHOP, Rel.OFFICER, Rel.MEMBER, Rel.RECRUIT, Rel.ALLY),
 	CONTAINER(true, "container", "use containers",       Rel.LEADER, Rel.BISHOP, Rel.OFFICER, Rel.MEMBER),
 	
+        ANNOUNCE(false, "announce", "announce message",       Rel.LEADER, Rel.BISHOP, Rel.OFFICER),
 	INVITE(false, "invite", "invite players",             Rel.LEADER, Rel.BISHOP, Rel.OFFICER),
 	KICK(false, "kick", "kick members",                   Rel.LEADER, Rel.BISHOP, Rel.OFFICER),
 	SETHOME(false, "sethome", "set the home",             Rel.LEADER, Rel.BISHOP, Rel.OFFICER),
@@ -111,6 +112,7 @@ public enum FPerm
 		if (str.startsWith("but")) return BUTTON;
 		if (str.startsWith("l"))   return LEVER;
 		if (str.startsWith("co"))  return CONTAINER;
+                if (str.startsWith("an"))  return ANNOUNCE;
 		if (str.startsWith("i"))   return INVITE;
 		if (str.startsWith("k"))   return KICK;
 		if (str.startsWith("s"))   return SETHOME;

@@ -4,6 +4,7 @@ import com.massivecraft.mcore.cmd.req.ReqHasPerm;
 import com.massivecraft.mcore.cmd.req.ReqIsPlayer;
 import com.massivecraft.mcore.util.Txt;
 
+import net.immortalcraft.factions.FPerm;
 import net.immortalcraft.factions.cmd.req.ReqFactionsEnabled;
 import net.immortalcraft.factions.entity.Faction;
 import net.immortalcraft.factions.Lang;
@@ -34,6 +35,7 @@ public class CmdFactionsAnnounce extends FCommand
 		Faction faction = usender.getFaction();
                 
                 // TODO: Add a feature on the FPerm board to only allow certain ranks.
+                if ( ! FPerm.ANNOUNCE.has(usender, faction, true)) return;
                 
                 // Command
 		faction.msg(Lang.ANNOUNCE_FORMAT, message);
