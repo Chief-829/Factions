@@ -9,7 +9,6 @@ import com.massivecraft.mcore.store.Coll;
 import com.massivecraft.mcore.store.MStore;
 import com.massivecraft.mcore.util.Txt;
 
-import net.immortalcraft.factions.ConfServer;
 import net.immortalcraft.factions.FFlag;
 import net.immortalcraft.factions.FPerm;
 import net.immortalcraft.factions.Factions;
@@ -25,7 +24,7 @@ public class FactionColl extends Coll<Faction>
 	
 	public FactionColl(String name)
 	{
-		super(name, Faction.class, MStore.getDb(ConfServer.dburi), Factions.get());
+		super(name, Faction.class, MStore.getDb(), Factions.get());
 	}
 	
 	// -------------------------------------------- //

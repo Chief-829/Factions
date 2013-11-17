@@ -1,6 +1,6 @@
 package net.immortalcraft.factions.cmd;
 
-import net.immortalcraft.factions.ConfServer;
+import net.immortalcraft.factions.entity.MConf;
 import net.immortalcraft.factions.FFlag;
 import net.immortalcraft.factions.Perm;
 import net.immortalcraft.factions.Rel;
@@ -75,7 +75,7 @@ public abstract class CmdFactionsRelationAbstract extends FCommand
 		else
 		{
 			otherFaction.msg("%s<i> wishes to be %s.", usenderFaction.describeTo(otherFaction, true), newRelation.getColor()+newRelation.getDescFactionOne());
-			otherFaction.msg("<i>Type <c>/"+ConfServer.baseCommandAliases.get(0)+" "+newRelation+" "+usenderFaction.getName()+"<i> to accept.");
+			otherFaction.msg("<i>Type <c>/"+MConf.get().aliasesF.get(0)+" "+newRelation+" "+usenderFaction.getName()+"<i> to accept.");
 			usenderFaction.msg("%s<i> were informed that you wish to be %s<i>.", otherFaction.describeTo(usenderFaction, true), newRelation.getColor()+newRelation.getDescFactionOne());
 		}
 		

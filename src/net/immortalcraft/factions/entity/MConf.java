@@ -10,6 +10,8 @@ import org.bukkit.event.EventPriority;
 import net.immortalcraft.factions.Factions;
 import net.immortalcraft.factions.listeners.FactionsListenerChat;
 import com.massivecraft.mcore.store.Entity;
+import com.massivecraft.mcore.util.MUtil;
+import java.util.List;
 
 public class MConf extends Entity<MConf>
 {
@@ -37,6 +39,12 @@ public class MConf extends Entity<MConf>
 	}
 	
 	// -------------------------------------------- //
+        // COMMAND ALIASES
+        // -------------------------------------------- //
+   
+         public List<String> aliasesF = MUtil.list("f");
+   
+        // -------------------------------------------- //
 	// TASKS
 	// -------------------------------------------- //
 	

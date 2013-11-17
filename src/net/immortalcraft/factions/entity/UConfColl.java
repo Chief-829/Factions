@@ -1,6 +1,5 @@
 package net.immortalcraft.factions.entity;
 
-import net.immortalcraft.factions.ConfServer;
 import net.immortalcraft.factions.Factions;
 import com.massivecraft.mcore.MCore;
 import com.massivecraft.mcore.store.Coll;
@@ -14,7 +13,7 @@ public class UConfColl extends Coll<UConf>
 	
 	public UConfColl(String name)
 	{
-		super(name, UConf.class, MStore.getDb(ConfServer.dburi), Factions.get(), true, false);
+		super(name, UConf.class, MStore.getDb(), Factions.get(), false, true, false);
 	}
 	
 	// -------------------------------------------- //

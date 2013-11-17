@@ -1,6 +1,5 @@
 package net.immortalcraft.factions.entity;
 
-import net.immortalcraft.factions.ConfServer;
 import net.immortalcraft.factions.Factions;
 import net.immortalcraft.factions.Rel;
 import com.massivecraft.mcore.mixin.Mixin;
@@ -17,7 +16,7 @@ public class UPlayerColl extends SenderColl<UPlayer>
 	
 	public UPlayerColl(String name)
 	{
-		super(name, UPlayer.class, MStore.getDb(ConfServer.dburi), Factions.get());
+		super(name, UPlayer.class, MStore.getDb(), Factions.get());
 	}
 	
 	// -------------------------------------------- //

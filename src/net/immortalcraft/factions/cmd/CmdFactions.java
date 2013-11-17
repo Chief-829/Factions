@@ -1,15 +1,19 @@
 package net.immortalcraft.factions.cmd;
 
-import java.util.Collections;
+import java.util.List;
 
-import net.immortalcraft.factions.ConfServer;
 import net.immortalcraft.factions.Factions;
 import net.immortalcraft.factions.Perm;
+import net.immortalcraft.factions.entity.MConf;
 import com.massivecraft.mcore.cmd.HelpCommand;
 import com.massivecraft.mcore.cmd.VersionCommand;
 
 public class CmdFactions extends FCommand
 {
+        // -------------------------------------------- //
+        // FIELDS                                       
+        // -------------------------------------------- //
+    
 	public CmdFactionsAccess cmdFactionsAccess = new CmdFactionsAccess();
 	public CmdFactionsLeader cmdFactionsLeader = new CmdFactionsLeader();
         public CmdFactionsAnnounce cmdFactionsAnnounce = new CmdFactionsAnnounce();
@@ -51,15 +55,7 @@ public class CmdFactions extends FCommand
 	
 	public CmdFactions()
 	{
-		this.aliases.addAll(ConfServer.baseCommandAliases);
-		
-		// remove any nulls from extra commas
-		// TODO: When is this required? Should this be added to MCore?
-		this.aliases.removeAll(Collections.singletonList(null));
-		
-		this.setDesc("The faction base command");
-		this.setHelp("This command contains all faction stuff.");
-		
+		// Add SubCommands
 		this.addSubCommand(HelpCommand.get());
 		this.addSubCommand(this.cmdFactionsList);
 		this.addSubCommand(this.cmdFactionsFaction);
@@ -99,13 +95,16 @@ public class CmdFactions extends FCommand
 		this.addSubCommand(this.cmdFactionsPowerBoost);
 		this.addSubCommand(this.cmdFactionsPromote);
 		this.addSubCommand(this.cmdFactionsVersion);
+                
+                // Misc
+                this.setDesc("The faction base command");
+                this.setHelp("This command contains all faction stuff.");
 	}
 	
 	@Override
-	public void perform()
+	public List<String> getAliases()
 	{
-		this.getCommandChain().add(this);
-		HelpCommand.getInstance().execute(this.sender, this.args, this.commandChain);
+		    return MConf.get().aliasesF;
 	}
 
 }

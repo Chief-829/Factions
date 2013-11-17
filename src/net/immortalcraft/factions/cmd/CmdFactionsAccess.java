@@ -30,7 +30,7 @@ public class CmdFactionsAccess extends FCommand
 	public void perform()
 	{
 		this.getCommandChain().add(this);
-		HelpCommand.getInstance().execute(this.sender, this.args, this.commandChain);
+		HelpCommand.get().execute(this.sender, this.args, this.commandChain);
 	}
 	
 }

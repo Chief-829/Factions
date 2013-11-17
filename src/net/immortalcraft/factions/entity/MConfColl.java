@@ -1,6 +1,5 @@
 package net.immortalcraft.factions.entity;
 
-import net.immortalcraft.factions.ConfServer;
 import net.immortalcraft.factions.Const;
 import net.immortalcraft.factions.Factions;
 import com.massivecraft.mcore.MCore;
@@ -17,7 +16,7 @@ public class MConfColl extends Coll<MConf>
 	public static MConfColl get() { return i; }
 	private MConfColl()
 	{
-		super(Const.COLLECTION_BASENAME_MCONF, MConf.class, MStore.getDb(ConfServer.dburi), Factions.get(), true, false);
+		super(Const.COLLECTION_MCONF, MConf.class, MStore.getDb(), Factions.get(), false, true, false);
 	}
 	
 	// -------------------------------------------- //

@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
-import net.immortalcraft.factions.ConfServer;
 import net.immortalcraft.factions.Factions;
 import net.immortalcraft.factions.RelationParticipator;
 import net.immortalcraft.factions.TerritoryAccess;
@@ -21,7 +20,7 @@ public class BoardColl extends Coll<Board> implements BoardInterface
 	
 	public BoardColl(String name)
 	{
-		super(name, Board.class, MStore.getDb(ConfServer.dburi), Factions.get(), true, true);
+		super(name, Board.class, MStore.getDb(), Factions.get(), false, true, true);
 	}
 	
 	// -------------------------------------------- //
