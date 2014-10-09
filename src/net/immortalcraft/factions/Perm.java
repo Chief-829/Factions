@@ -25,6 +25,7 @@ public enum Perm
 	DEMOTE("demote"),
 	DESCRIPTION("description"),
 	DISBAND("disband"),
+	DUMMY("dummy"),
 	FACTION("faction"),
 	FLAG("flag"),
 	FLAG_SET("flag.set"),
