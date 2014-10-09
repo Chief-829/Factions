@@ -25,6 +25,7 @@ permissions:
   factions.demote: {description: demote lesser members in your faction, default: false}
   factions.description: {description: change faction description, default: false}
   factions.disband: {description: disband faction, default: false}
+  factions.dummy: {description: you have found the dummy command!!!, default: false}
   factions.faction: {description: show faction information, default: false}
   factions.flag: {description: read faction flags, default: false}
   factions.flag.set: {description: set faction flags, default: false}
