@@ -24,6 +24,7 @@ public class CmdFactions extends FCommand
 	public CmdFactionsDemote cmdFactionsDemote = new CmdFactionsDemote();
 	public CmdFactionsDescription cmdFactionsDescription = new CmdFactionsDescription();
 	public CmdFactionsDisband cmdFactionsDisband = new CmdFactionsDisband();
+	public CmdFactionsDummy cmdFactionsDummy = new CmdFactionsDummy();
 	public CmdFactionsFaction cmdFactionsFaction = new CmdFactionsFaction();
 	public CmdFactionsFlag cmdFactionsFlag = new CmdFactionsFlag();
 	public CmdFactionsHome cmdFactionsHome = new CmdFactionsHome();
@@ -95,6 +96,7 @@ public class CmdFactions extends FCommand
 		this.addSubCommand(this.cmdFactionsPowerBoost);
 		this.addSubCommand(this.cmdFactionsPromote);
 		this.addSubCommand(this.cmdFactionsVersion);
+		this.addSubCommand(this.cmdFactionsDummy);
                 
                 // Misc
                 this.setDesc("The faction base command");
