@@ -4,9 +4,9 @@ import net.immortalcraft.factions.Factions
 import net.immortalcraft.factions.cmd.FCommand
 
 // This is a test/template for commands
-public class CmdDummy extends FCommand
+public class CmdFactionsDummy extends FCommand
 {
-  public CmdDummy()
+  public CmdFactionsDummy()
   {
     
       // Aliases
