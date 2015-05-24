@@ -50,8 +50,8 @@ permissions:
   factions.money.f2p: {description: transfer f --> p, default: false}
   factions.money.p2f: {description: transfer p --> f, default: false}
   factions.money.withdraw: {description: withdraw from faction, default: false}
-  factions.officer: {description: make player officer, default: false}
-  factions.officer.any: {description: set officers for another faction, default: false}
+  factions.mod: {description: make player mod, default: false}
+  factions.mod.any: {description: set mods for another faction, default: false}
   factions.open: {description: set if invitation is required to join, default: false}
   factions.perm: {description: change faction permissions, default: false}
   factions.player: {description: show player information}
@@ -108,8 +108,8 @@ permissions:
       factions.money.f2p: true
       factions.money.p2f: true
       factions.money.withdraw: true
-      factions.officer: true
-      factions.officer.any: true
+      factions.mod: true
+      factions.mod.any: true
       factions.open: true
       factions.perm: true
       factions.player: true
@@ -145,7 +145,7 @@ permissions:
       factions.join.others: true
       factions.leader.any: true
       factions.bishop.any: true
-      factions.officer.any: true
+      factions.mod.any: true
       factions.access.any: true
   factions.kit.rank1:
     default: false
@@ -187,7 +187,7 @@ permissions:
       factions.money.f2p: true
       factions.money.p2f: true
       factions.money.withdraw: true
-      factions.officer: true
+      factions.mod: true
       factions.open: true
       factions.perm: true
       factions.player: true
